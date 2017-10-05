@@ -41,7 +41,11 @@ public class CrossGame {
 		return r.nextInt(2);
 	
 	}
+	public static int randomPosition(int num) {
+		Random r=new Random();	
+		return r.nextInt(2);
 	
+	}
 	public static void win(char ch) {
 	
 		if((array[0][0]==ch)&&(array[1][1]==ch)&&(array[2][2]==ch)) {

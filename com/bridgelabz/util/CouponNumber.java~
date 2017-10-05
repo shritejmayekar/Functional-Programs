@@ -9,8 +9,6 @@ public class CouponNumber {
  */
 	public static int coupon(int number) {
 		int[] a=new int[number];
-		for(int i=0;i<number;i++)
-			a[i]=-1;
 		int num;
 		int couponNum=0;
 		int counter=0;
