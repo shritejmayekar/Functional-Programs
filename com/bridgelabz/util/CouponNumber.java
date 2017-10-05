@@ -1,27 +1,33 @@
 package com.bridgelabz.util;
 
 import java.util.Random;
-
+import java.util.Scanner;
 public class CouponNumber {
 /**
  * 
  * @param number
  */
-	public static void coupon(int number) {
+	public static int coupon(int number) {
 		int[] a=new int[number];
 		int num;
+		int couponNum=0;
+		int counter=0;
 		for(int i=0;i<number;i++) {
 			num=generateRandom();
-			if(!duplicate(a, num))
+			if(!duplicate(a, num)) {
 				a[i]=num;
+				couponNum=num+couponNum*10;
+			}
 			else {
 				i--;
-			}		
+			}
+			counter++;		
 		}
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]);
-		}	
+		System.out.println("\nIteration for generate coupon="+counter);
+		return couponNum;
+			
 	}
+	
 /**
  * 
  * @return
@@ -46,9 +52,11 @@ public class CouponNumber {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//System.out.print(Math.random()*9);
-		coupon(8);
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.print("Please Enter the length of Coupon:");
+		System.out.println("coupon number is "+coupon(sc.nextInt()));
+		System.out.println();
 
 	}
 

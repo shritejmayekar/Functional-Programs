@@ -1,5 +1,6 @@
 package com.bridgelabz.util;
 import java.util.Scanner;
+import java.util.Random;
 public class CrossGame {
 	public static int row,col;
 	Scanner sc=new Scanner(System.in);
@@ -8,34 +9,63 @@ public class CrossGame {
 					{'-','-','-'}
 					};
 	public static void compPlay() {
-	if(randomPosition())
-	{
-		row=0;
-		col=0;
-	}
-	else if(randomPosition()) {
-		row=1;
-		col=1;
-	}
-	else {
-		row=2;
-		col=2;
-	}
-	if(array[row][col]!='o'||array[row][col]!='X')
+	int row=randomPosition();
+	int col=randomPosition();
+	if(array[row][col]!='O'&&array[row][col]!='X')
 			array[row][col]='O';
-	else
-		compPlay();
+	else {
+	 		/*row=randomPosition();
+	 		col=randomPosition();
+	 		if(array[row][col]!='o'&&array[row][col]!='X')
+			array[row][col]='O';*/
+			//compPlay();
 	}
-	public static boolean randomPosition() {
-		return Math.random()<0.5;	
+			
 	
 	}
-	public static void win() {
+	public static int randomPosition() {
+		Random r=new Random();	
+		return r.nextInt(2);
 	
-		if((a[0][0]&&a[1][1])&&a[2][2])
-			System.out.print("win");
+	}
+	public static void win(char ch) {
+	
+		if((array[0][0]==ch)&&(array[1][1]==ch)&&(array[2][2]==ch)) {
+			System.out.println("win " +ch);		
+			return;
+		}
+		if((array[0][2]==ch)&&(array[1][1]==ch)&&(array[2][0]==ch)) {
+			System.out.println("win " +ch);
+			return;
+		}	
+		if((array[0][0]==ch)&&(array[1][0]==ch)&&(array[2][0]==ch)) {
+			System.out.println("win " +ch);
+				return;
+		}
+		if((array[0][1]==ch)&&(array[1][1]==ch)&&(array[2][1]==ch)) {
+			System.out.println("win " +ch);
+				return;
+		}	
+		if((array[0][2]==ch)&&(array[1][2]==ch)&&(array[2][2]==ch)) {
+			System.out.println("win " +ch);
+				return;
+		}
+		if((array[0][0]==ch)&&(array[0][1]==ch)&&(array[0][2]==ch)) {
+			System.out.println("win " +ch);
+				return;
+		}	
+		if((array[1][0]==ch)&&(array[1][1]==ch)&&(array[1][2]==ch)) {
+			System.out.println("win " +ch);
+				return;
+		}	
+		if((array[2][0]==ch)&&(array[2][1]==ch)&&(array[2][2]==ch)) {
+			System.out.println("win " +ch);
+				return;
+		}			
+	}
 		
-	}
+	
+
 	
 
 	public static void main(String[] args) {
@@ -54,13 +84,16 @@ public class CrossGame {
 		System.out.println("Please enter row and col");
 		row=sc.nextInt();
 		col=sc.nextInt();
+		if(array[row][col]!='O'&&array[row][col]!='X')
 		array[row][col]='X';
+		else
+		main(args);
 		compPlay();
+		win('X');
+		win('O');
 		
 		
 	}
 	}
-	
-
 }
-
+	
