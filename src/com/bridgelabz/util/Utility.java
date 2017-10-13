@@ -137,7 +137,7 @@ public static int coupon(int number) {
 */
 	public static int generateRandom() {
 		Random random=new Random();
-		return random.nextInt(10);
+		return random.nextInt(10);//scanner.close();
 	}
 /**
  * duplicate method check the uniqueness of value

@@ -49,45 +49,20 @@ public class CrossGame {
 	
 	public static void win(char ch) {
 	
-		if((array[0][0]==ch)&&(array[1][1]==ch)&&(array[2][2]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}
-		else if((array[0][2]==ch)&&(array[1][1]==ch)&&(array[2][0]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}	
-		else if((array[0][0]==ch)&&(array[1][0]==ch)&&(array[2][0]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}
-		else if((array[0][1]==ch)&&(array[1][1]==ch)&&(array[2][1]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}	
-		else if((array[0][2]==ch)&&(array[1][2]==ch)&&(array[2][2]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}
-		else if((array[0][0]==ch)&&(array[0][1]==ch)&&(array[0][2]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}	
-		else if((array[1][0]==ch)&&(array[1][1]==ch)&&(array[1][2]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);	
-			}	
-		else if((array[2][0]==ch)&&(array[2][1]==ch)&&(array[2][2]==ch)) {
-			System.out.println("win " +ch);
-			System.exit(0);
-		}
-		else
-			System.out.println("Not win  " +ch);	
+			if(	(array[0][0]==ch)&&(array[1][1]==ch)&&(array[2][2]==ch)||
+				(array[0][2]==ch)&&(array[1][1]==ch)&&(array[2][0]==ch)||
+				(array[0][0]==ch)&&(array[1][0]==ch)&&(array[2][0]==ch)||
+				(array[0][1]==ch)&&(array[1][1]==ch)&&(array[2][1]==ch)||
+				(array[0][2]==ch)&&(array[1][2]==ch)&&(array[2][2]==ch)||
+				(array[0][0]==ch)&&(array[0][1]==ch)&&(array[0][2]==ch)||
+				(array[1][0]==ch)&&(array[1][1]==ch)&&(array[1][2]==ch)||
+				(array[2][0]==ch)&&(array[2][1]==ch)&&(array[2][2]==ch)){
+					System.out.println("win " +ch);
+						System.exit(0);
+			}
+			else
+				System.out.println("Not win  " +ch);	
 	}
-		
-	
-
-	
 
 	public static void main(String[] args) {
 	Scanner scanner=new Scanner(System.in);
@@ -112,7 +87,7 @@ public class CrossGame {
 		win('X');
 		computerPlay();
 		win('O');
-		scanner.close();
+		
 		
 	}
 	}
