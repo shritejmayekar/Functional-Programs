@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/WindChill.java
- *  Execution:    java -cp bin com.bridgelabz.programs.WindChill
  *  
  *  Purpose: To find the wind is chilled how much
  *  			

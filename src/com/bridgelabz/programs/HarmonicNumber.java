@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/ HarmonicNumber.java
- *  Execution:    java -cp bin com.bridgelabz.programs.HarmonicNumber
  *  
  *  Purpose: To calculate harmonic number and display series
  *  			

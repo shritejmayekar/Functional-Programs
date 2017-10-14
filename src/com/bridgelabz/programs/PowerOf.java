@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/PowerOfjava
- *  Execution:    java -cp bin com.bridgelabz.programs.PowerOf
  *  
  *  Purpose: To print the 2 raised to number(2^n) table
  *  			

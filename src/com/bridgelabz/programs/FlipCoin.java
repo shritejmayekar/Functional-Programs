@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/FlipCoin.java
- *  Execution:    java -cp bin com.bridgelabz.programs.FlipCoin
  *  
  *  Purpose: To FlipCoin number of times  and calculate percentage of
  *  			head and tail

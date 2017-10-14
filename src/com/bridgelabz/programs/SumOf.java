@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/SumOf.java
- *  Execution:    java -cp bin com.bridgelabz.programs.SumOf
  *  
  *  Purpose: To find occurrence of numbers that individual distinct 
  *  			sum equals zero

@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/Distance.java
- *  Execution:    java -cp bin com.bridgelabz.programs.Distance
  *  
  *  Purpose: To Calculate Euclidean distance
  *

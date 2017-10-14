@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/StringTemplate.java
- *  Execution:    java -cp bin com.bridgelabz.programs.StringTemplate
  *  
  *  Purpose: To interact with user and give response
  *  			

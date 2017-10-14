@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/CouponNumber.java
- *  Execution:    java -cp bin com.bridgelabz.programs.CouponNumber
  *  
  *  Purpose: To take length of coupon and generate coupon with
  *  			distinct number

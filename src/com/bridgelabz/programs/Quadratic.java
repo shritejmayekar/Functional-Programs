@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/Quadratic.java
- *  Execution:    java -cp bin com.bridgelabz.programs.quadratic a b c
  *  
  *  Purpose: To findthe roots of quadratic equation
  *  			

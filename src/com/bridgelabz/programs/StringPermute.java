@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/StringPermute.java
- *  Execution:    java -cp bin com.bridgelabz.programs.StringPermute
  *  
  *  Purpose: To Calculate the times of arrangement of word as well as print
  *  			those numbers

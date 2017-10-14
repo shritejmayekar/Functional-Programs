@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/CrossGame.java
- *  Execution:    java -cp bin com.bridgelabz.programs.CrossGame
  *  
  *  Purpose: To play cross game with computer and computer play by random guess
  *  			to win

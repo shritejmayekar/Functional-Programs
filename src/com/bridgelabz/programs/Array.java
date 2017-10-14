@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/Array.java
- *  Execution:    java -cp bin com.bridgelabz.programs.Array
  *  
  *  Purpose: To take 2D array input using Scanner class and print using 
  *  			 PrintWriter with OutputStreamWriter

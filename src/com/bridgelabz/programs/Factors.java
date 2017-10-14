@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/Factors.java
- *  Execution:    java -cp bin com.bridgelabz.programs.Factors
  *  
  *  Purpose: To find the prime factors of Number given by user
  *

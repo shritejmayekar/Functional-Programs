@@ -1,6 +1,4 @@
 /******************************************************************************
- *  Compilation:  javac -d . com/bridgelabz/programs/LeapYear.java
- *  Execution:    java -cp bin com.bridgelabz.programs.LeapYeat
  *  
  *  Purpose: To check whether the Year is leap or not
  *  			
