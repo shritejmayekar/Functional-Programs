@@ -22,6 +22,91 @@ public class Utility {
 	public static int counter;
 	public static double distance;
 	public static double root1,root2,delta;
+	public static int win,lose;
+	/*Variable Declaration */
+	public static int valueFactor;
+/**
+ * evenFactor method to calculate even factors of number	
+ */
+	public static void evenFactor() {
+		System.out.print(2+"  ");
+		valueFactor=valueFactor/2;
+	}
+/**
+ * primeFactor method to calculate prime factors of number
+ * @param factor
+ */
+	public static void primeFactor(int factor) {
+		System.out.print(factor+"  ");
+		valueFactor=valueFactor/factor;
+	}
+/**
+ * isPrime method checks the number is prime or not
+ * @param number
+ * @return boolean(true or false)
+ */
+	public static boolean isPrime(int number) {
+		int counter=0;
+		for (int i = 1; i <=number; i++) {
+			if(number%i==0) {
+				counter++;
+			
+			}
+		}
+		if(counter==2)
+			return true;
+		return false;
+	}
+/**
+ * findPrimeFactors method find and calculates all the prime factors
+ * 		for given number
+ */
+	public static void findPrimeFactors (int value) {
+		valueFactor=value;
+		int ntraverse=value;
+		for(int i=0;i*i<=ntraverse;i++) {
+			if(valueFactor%2==0) 
+				evenFactor();
+			else {
+				
+				for(int factor=3;factor<=valueFactor;factor++) {
+					if(isPrime(factor))
+						if(valueFactor%factor==0)
+							primeFactor(factor);
+				}		
+			}	
+		}	
+	}
+/**
+ * gambler method will calculates will gambler lose money or reach goal
+ * @param goal
+ * @param stake
+ * @param numberOfSimulation
+ */
+	public static void gambler(int goal,int stake,int numberOfSimulation) {
+		for (int i = 0; i < numberOfSimulation; i++) {
+			if(goal==stake) {
+				System.out.println("win");
+				break;
+			}
+			else if((stake>0)&&(goal!=stake)) {
+				if(Math.random()<0.5) {
+					win++;
+					stake++;
+				}
+				else {
+					lose++;
+					stake--;
+				}
+			}
+			else {
+				System.out.println("better luck next time");
+				break;
+			}
+		
+	}
+	System.out.println("stake="+stake+" win="+win+" lose="+ lose);
+	}
 /**
 *	check head or tail occurrence
 *	@param void
