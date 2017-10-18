@@ -18,9 +18,14 @@ public class WindChill {
 	
 	public static void main(String[] args) {
 	
-	temperature=Double.parseDouble(args[0]);
-	speed=Double.parseDouble(args[1]);
-	System.out.println("WindChill:"+Utility.windChill(temperature, speed));	
+	try {
+		temperature=Double.parseDouble(args[0]);
+		speed=Double.parseDouble(args[1]);
+		System.out.println("WindChill:"+Utility.windChill(temperature, speed));
+	} catch (NumberFormatException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}	
 		
 	}
 

@@ -1,3 +1,10 @@
+
+package com.bridgelabz.programs;
+
+
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.Scanner;
 /******************************************************************************
  *  
  *  Purpose: To take 2D array input using Scanner class and print using 
@@ -8,13 +15,6 @@
  *  @since   03-10-2017
  *
  ******************************************************************************/
-package com.bridgelabz.programs;
-
-
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.Scanner;
-
 public class Array {
 	public static  int mRow,nColoumn;
 	

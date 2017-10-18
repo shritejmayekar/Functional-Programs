@@ -1,3 +1,10 @@
+
+package com.bridgelabz.programs;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import com.bridgelabz.util.Utility;
 /******************************************************************************
  *  
  *  Purpose: To find the prime factors of Number given by user
@@ -7,13 +14,6 @@
  *  @since   03-10-2017
  *
  ******************************************************************************/
-package com.bridgelabz.programs;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-import com.bridgelabz.util.Utility;
-
 public class Factors {
 	static int value;
 	public static void main(String[] args) {
