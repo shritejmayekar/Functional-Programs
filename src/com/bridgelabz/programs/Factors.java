@@ -15,7 +15,7 @@ import com.bridgelabz.util.Utility;
  *
  ******************************************************************************/
 public class Factors {
-	static int value;
+	public static int value;
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		System.out.print("please enter the number:");

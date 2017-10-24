@@ -13,6 +13,7 @@ import java.util.Random;
  *
  ******************************************************************************/
 public class CrossGame {
+	public static boolean flag=true;
 	public static int row,col;
 	public static Scanner scanner=new Scanner(System.in);
 	public static char array[][]={	{'-','-','-'},
@@ -57,14 +58,14 @@ public class CrossGame {
 				(array[1][0]==ch)&&(array[1][1]==ch)&&(array[1][2]==ch)||
 				(array[2][0]==ch)&&(array[2][1]==ch)&&(array[2][2]==ch)){
 			System.out.println("win " +ch);
-			System.exit(0);
+			flag=false;
 		}
 		else
 			System.out.println("Not win  " +ch);	
 	}
 
 	public static void main(String[] args) {
-		while(true) {
+		while(flag) {
 
 			for(int i=0;i<3;i++) {
 				for(int j=0;j<3;j++) {

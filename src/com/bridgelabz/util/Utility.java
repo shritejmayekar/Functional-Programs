@@ -12,9 +12,9 @@ import java.util.Random;
  *
  ******************************************************************************/
 public class Utility {
-	static int head,tail;
+	public static int head,tail;
 	public static double sum;
-	static float perHead,perTail;
+	public static float perHead,perTail;
 	public static int a,b,c;
 	public static int counter;
 	public static double distance;
@@ -50,9 +50,7 @@ public class Utility {
 
 			}
 		}
-		if(counter==2)
-			return true;
-		return false;
+		return (counter==2);
 	}
 	/**
 	 * findPrimeFactors method find and calculates all the prime factors
@@ -67,8 +65,7 @@ public class Utility {
 			else {
 
 				for(int factor=3;factor<=valueFactor;factor++) {
-					if(isPrime(factor))
-						if(valueFactor%factor==0)
+					if((isPrime(factor)) && (valueFactor%factor==0))
 							primeFactor(factor);
 				}		
 			}	
@@ -157,7 +154,7 @@ public class Utility {
 		}
 	}
 	/**
-	 * Method to calculate Quadratic Equation (aX^2+bX+C=0)
+	 *calQuadratic method  to calculate Quadratic Equation (aX^2+bX+C=0)
 	 * @param a 
 	 * @param b
 	 * @param c
