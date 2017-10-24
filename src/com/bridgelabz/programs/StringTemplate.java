@@ -1,3 +1,6 @@
+
+package com.bridgelabz.programs;
+import java.util.Scanner;
 /******************************************************************************
  *  
  *  Purpose: To interact with user and give response
@@ -7,12 +10,10 @@
  *  @since   03-10-2017
  *
  ******************************************************************************/
-package com.bridgelabz.programs;
-import java.util.Scanner;
 public class StringTemplate {
 	public static String username;
 	public static void main(String[] args) {
-		
+
 		Scanner scanner=new Scanner(System.in);
 		System.out.print("Please Enter Name:");
 		username = scanner.nextLine();

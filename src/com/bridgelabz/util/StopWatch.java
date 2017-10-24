@@ -33,24 +33,5 @@ public class StopWatch {
 	public static void showElapse() {
 		System.out.println("Stop time:"+elapseTime+" milliseconds");
 	}
-	
-
-	public static void main(String[] args) {
-		StopWatch.start();
-		for(int i=0;i<150005;i++)
-		{
-			
-		System.out.println("hELLO");
-	
-		
-		}
-		StopWatch.stop();
-		StopWatch.showStart();
-		StopWatch.showStop();
-		StopWatch.showElapse();
-		
-		
-	}
-
 }
 

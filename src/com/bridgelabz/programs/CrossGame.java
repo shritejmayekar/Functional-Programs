@@ -14,7 +14,7 @@ import java.util.Random;
  ******************************************************************************/
 public class CrossGame {
 	public static int row,col;
-	Scanner scanner=new Scanner(System.in);
+	public static Scanner scanner=new Scanner(System.in);
 	public static char array[][]={	{'-','-','-'},
 			{'-','-','-'},
 			{'-','-','-'}
@@ -64,7 +64,6 @@ public class CrossGame {
 	}
 
 	public static void main(String[] args) {
-		Scanner scanner=new Scanner(System.in);
 		while(true) {
 
 			for(int i=0;i<3;i++) {
