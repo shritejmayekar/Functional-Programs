@@ -90,7 +90,6 @@ public class TicTacToe {
 		}
 		else
 			System.out.println("Not Win  " +ch);
-		return;
 	}
 	/**
 	 * checkBoardVictory method will check which player is winner or not win yet any of them
